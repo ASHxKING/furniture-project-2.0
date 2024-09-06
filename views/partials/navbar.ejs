@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="/">Furniture Store</a>
+        
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links and Search Bar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Links to pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/products?category=furniture">Furniture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products?category=furnishing">Furnishing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products?category=decor">Decor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/products?category=newarrivals">New Arrivals</a>
+                </li>
+            </ul>
+
+            <!-- Search Bar -->
+            <form class="d-flex" action="/search" method="GET">
+                <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

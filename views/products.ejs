@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <!-- Include Navbar -->
+    <%- include('partials/navbar') %>
+
+    <!-- Product Filters -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Shop Our Collection</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Filter by Category</h5>
+                <ul class="list-group">
+                    <li class="list-group-item filter" data-category="all">All</li>
+                    <li class="list-group-item filter" data-category="sofa">Sofas</li>
+                    <li class="list-group-item filter" data-category="bed">Beds</li>
+                    <li class="list-group-item filter" data-category="chair">Chairs</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="row" id="product-list">
+                    <% products.forEach(product => { %>
+                    <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="<%= product.category %>">
+                        <div class="card h-100">
+                            <img src="<%= product.image %>" class="card-img-top" alt="<%= product.title %>">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= product.title %></h5>
+                                <p class="card-text">$<%= product.price %></p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-outline-primary add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <%- include('partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
