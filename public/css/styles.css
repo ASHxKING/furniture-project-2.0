@@ -36,13 +36,14 @@ body {
 .form-control {
     width: 300px; /* Adjust the width of the search bar */
 }
-
 /* General Navbar Styling */
 .navbar {
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: static;
+}
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
@@ -52,7 +53,7 @@ body {
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: 500;
-    padding: 10px 15px;
+    padding: 10px 20px;
     color: #333;
 }
 
@@ -63,16 +64,23 @@ body {
 /* Megamenu Styling */
 .megamenu .dropdown-menu {
     width: 100%;
-    padding: 20px;
+    padding: 30px 50px; /* Increased padding for more spacious look */
     background-color: #f8f9fa;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Add spacing between columns */
+.megamenu .row > .col-md-4 {
+    margin-bottom: 30px; /* Space between rows */
+    padding-right: 30px; /* Space between columns */
 }
 
 .megamenu .dropdown-menu h5 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Add spacing below headers */
 }
 
 .megamenu .dropdown-menu ul {
@@ -81,12 +89,14 @@ body {
 
 .megamenu .dropdown-menu ul li {
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Add more spacing between links */
 }
 
 .megamenu .dropdown-menu ul li a {
     color: #333;
     text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.8; /* Increase line height for better readability */
 }
 
 .megamenu .dropdown-menu ul li a:hover {
@@ -109,3 +119,24 @@ body {
     background-color: #28a745;
     color: #fff;
 }
+
+/* Additional Premium Spacing */
+.dropdown-menu {
+    border-radius: 10px; /* Rounded corners for premium feel */
+    padding-top: 30px; /* Increase padding for open space */
+}
+
+.dropdown-menu h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.dropdown-menu ul li a {
+    padding: 5px 0; /* Spacing between each link */
+}
+
+.megamenu .dropdown-menu .container {
+    padding: 20px 0;
+}
+
+
