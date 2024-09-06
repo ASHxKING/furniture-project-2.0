@@ -36,3 +36,76 @@ body {
 .form-control {
     width: 300px; /* Adjust the width of the search bar */
 }
+
+/* General Navbar Styling */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745; /* Bootstrap success color */
+}
+
+/* Megamenu Styling */
+.megamenu .dropdown-menu {
+    width: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.megamenu .dropdown-menu h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.megamenu .dropdown-menu ul {
+    padding-left: 0;
+}
+
+.megamenu .dropdown-menu ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.megamenu .dropdown-menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.megamenu .dropdown-menu ul li a:hover {
+    color: #28a745;
+}
+
+/* Premium Search Bar Styling */
+.form-control {
+    width: 300px;
+    border: 2px solid #28a745;
+    border-radius: 0;
+}
+
+.btn-outline-success {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
